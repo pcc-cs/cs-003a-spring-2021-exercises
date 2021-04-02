@@ -19,7 +19,7 @@ class string {
  private:
   char _value[0x100];
 
- public:
+public:
   explicit string(const char *v) {
     // Always check for nullptr before using!
     if (v == nullptr) {
@@ -30,6 +30,7 @@ class string {
   const char *value() {
     return _value;
   }
+  
 };
 }  // namespace b
 }  // namespace a
