@@ -13,8 +13,6 @@ class Node {
   int _value;
   Node *_next;
   friend class List;
-
- public:
   explicit Node(int);
 };
 
