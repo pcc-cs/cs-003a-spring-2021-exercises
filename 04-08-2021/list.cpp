@@ -54,6 +54,7 @@ bool List::in(int v) {
 // If n is not found, add at the end
 void List::insert(int n, int v) {
   // Sad/happy path constructs make code easy to read, have less nesting
+  // List is empty
   if (_head == nullptr) {
     append(v);
     return;
@@ -62,6 +63,7 @@ void List::insert(int n, int v) {
   // "Precondition": _head is NOT null
   // We also know from the list logic that _tail is also not null
 
+  // Found the value in the list
   Node *nnp = new Node(v);
   for (Node *np = _head; np != nullptr; np = np->_next) {
     if (np->_value == n) {
@@ -73,6 +75,8 @@ void List::insert(int n, int v) {
       return;
     }
   }
+
+  // Did not find the values
   _tail->_next = nnp;  // Safe because we know _tail != null
   _tail = _tail->_next;  // Don't forget this!
 }
