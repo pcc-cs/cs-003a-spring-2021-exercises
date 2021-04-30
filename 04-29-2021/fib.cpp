@@ -50,7 +50,7 @@ uint64_t fibm(uint8_t n) {
 int main(int argc, char *argv[]) {
   // Always check if you have valid inputs
   if (argc < 3) {
-    fprintf(stderr, "%s\n", USAGE);  // Note that errors are sent to std::cerr
+    fprintf(stderr, "%s\n", USAGE);  // Note that errors are sent to stderr
     exit(1);  // Exits the program with exit code 1
   }
 
@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
   } else if (argv[2][0] == 'm') {
     fib = fibm;
   } else {
-    fprintf(stderr, "%s\n", USAGE);  // Note that errors are sent to std::cerr
+    fprintf(stderr, "%s\n", USAGE);  // Note that errors are sent to stderr
     exit(1);  // Exits the program with exit code 1
   }
 
