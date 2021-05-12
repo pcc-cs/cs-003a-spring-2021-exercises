@@ -41,6 +41,7 @@ class Humanoid : public Animal {
  public:
   explicit Humanoid(double weight) : Animal(weight) {
   }
+  // Redefinition
   std::string diet() {
     return "Meat";
   }
