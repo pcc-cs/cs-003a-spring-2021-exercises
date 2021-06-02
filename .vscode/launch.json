@@ -5,10 +5,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "(gdb) Launch",
+      "name": "iterator1",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/05-25-2021/exceptions1",
+      "program": "${workspaceFolder}/06-01-2021/iterator1",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
@@ -23,6 +23,5 @@
           }
       ]
     }
-
   ]
 }
